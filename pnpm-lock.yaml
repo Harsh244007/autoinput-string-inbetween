@@ -10,12 +10,18 @@ dependencies:
     version: 10.18.1
 
 devDependencies:
+  '@babel/plugin-transform-react-jsx-development':
+    specifier: ^7.22.5
+    version: 7.22.5(@babel/core@7.23.0)
   '@preact/preset-vite':
     specifier: latest
     version: 2.5.0(@babel/core@7.23.0)(preact@10.18.1)(vite@4.4.11)
   autoprefixer:
     specifier: latest
     version: 10.4.16(postcss@8.4.31)
+  babel-plugin-transform-hook-names:
+    specifier: ^1.0.2
+    version: 1.0.2(@babel/core@7.23.0)
   postcss:
     specifier: latest
     version: 8.4.31

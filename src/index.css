@@ -6,13 +6,47 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+}
+body * {
+  transition: all 0.4s ease-out;
+}
+.searchBarMain {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+}
+.searchBar {
+  border: 1px solid black;
+  width: 100%;
+  /* max-width: 600px; */
+}
+.searchBarMain button {
+  cursor: pointer;
+  font-weight: 200px;
+  border: 1px solid black;
+}
+.searchBarMain button span {
+  font-weight: bold;
+}
+
+.searchBarMain > div {
+  display: flex;
+  flex-direction: column;
 }

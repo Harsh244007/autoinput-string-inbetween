@@ -1,11 +1,14 @@
-import { memo } from "preact/compat"
+import { Suspense, memo } from "preact/compat";
+import LoadingComponent from "./components/common/Loading";
+import SuggestionInput from "./components/suggestionBox";
 
-const App=()=> {
-
+const App = () => {
   return (
     <>
-      <div className="text-2xl m-auto text-center">Hello There</div>
+      <Suspense fallback={<LoadingComponent text="Loading" />}>
+        <SuggestionInput />
+      </Suspense>
     </>
-  )
-}
-export default memo(App)
+  );
+};
+export default memo(App);

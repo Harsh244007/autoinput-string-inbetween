@@ -13,9 +13,11 @@
     "preact": "latest"
   },
   "devDependencies": {
-    "postcss": "latest",
-    "autoprefixer": "latest",
+    "@babel/plugin-transform-react-jsx-development": "^7.22.5",
+    "babel-plugin-transform-hook-names": "^1.0.2",
     "@preact/preset-vite": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"

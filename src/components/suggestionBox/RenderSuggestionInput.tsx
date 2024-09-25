@@ -14,6 +14,7 @@ const RenderSuggestionInput = ({ searchValue, handleSearchChange, displayData }:
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearchChange(e?.target?.value)}
         className="searchBar"
       />
+      {searchValue === "" ? <p style={{ "color": "black" }}>Please Search for Software</p> : "" }
       {searchValue !== "" && displayData.length === 0 ? (
         <NotFound text="No result found" />
       ) : (
